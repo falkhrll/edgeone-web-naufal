@@ -3,49 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mengenal Tencent EdgeOne Makers - Platform Developer Masa Depan</title>
+    <title>Tencent EdgeOne Makers - Platform Developer Modern</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Three.js CDN untuk Animasi Partikel 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-    <div class="background-glow"></div>
-    
+    <!-- Canvas untuk Background 3D Partikel -->
+    <canvas id="bg3d"></canvas>
+
     <main class="container">
-        <div class="card">
+        <!-- Card dengan Efek 3D Tilt -->
+        <div class="card-3d" id="card3d">
             <div class="badge-container">
-                <span class="badge">Tencent EdgeOne Makers Platform</span>
+                <span class="badge">🚀 Tencent EdgeOne Makers Platform</span>
             </div>
             
-            <h1>Solusi Deploy Web <span class="highlight">Cepat & Aman</span> 🚀</h1>
+            <h1>Solusi Deploy Web <span class="highlight">Super Cepat & Ultra Aman</span></h1>
             <p class="description">
-                Tencent EdgeOne Makers mengintegrasikan Edge Computing, Network Acceleration (CDN), dan Serverless Security dalam satu platform terpadu untuk developer modern.
+                Platform *next-generation* yang menggabungkan <strong>Edge Computing</strong>, <strong>Global CDN Acceleration</strong>, dan <strong>Built-in Security (WAF/DDoS)</strong> untuk pengalaman deploy web instan tanpa ribet mengurus server.
             </p>
 
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="icon">⚡</div>
-                    <h3>Edge Delivery</h3>
-                    <p>Aset web disebarkan ke ratusan node global dengan latensi terendah.</p>
+                    <h3>Global Edge CDN</h3>
+                    <p>Aset statis (HTML/CSS/JS) didistribusikan ke ratusan *Edge Node* dunia dengan latensi di bawah 10ms.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🛡️</div>
-                    <h3>Integrated Security</h3>
-                    <p>Perlindungan otomatis WAF & Anti-DDoS langsung di layer edge.</p>
+                    <h3>Smart WAF & DDoS</h3>
+                    <p>Proteksi otomatis dari serangan siber, bot jahat, dan trafik DDoS langsung di lapisan jaringan *Edge*.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🤖</div>
-                    <h3>AI Developer Ecosystem</h3>
-                    <p>Integrasi ekosistem AI dengan dukungan API Token LLM gratis.</p>
+                    <h3>AI & LLM Integration</h3>
+                    <p>Siap dihubungkan ke API LLM gratis (Devhandal 2026) untuk aplikasi cerdas berbasis AI masa depan.</p>
                 </div>
             </div>
 
-            <button id="btnAction" class="btn-primary">Jelajahi Fitur EdgeOne</button>
+            <button id="btnAction" class="btn-primary">
+                <span>Jelajahi Status Server Edge</span>
+            </button>
             
             <div id="statusBox" class="status-box hidden">
                 <span class="status-dot"></span>
-                <p id="statusText">Memuat informasi Edge Network...</p>
+                <p id="statusText">Menghubungkan ke Edge Network...</p>
             </div>
         </div>
     </main>
